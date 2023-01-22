@@ -1,13 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+  box-sizing: border-box;
+}
 body {
+  background-color: #002029;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+header {
+  background-color: #004052;
+}
+header .inner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header img {
+  max-height: 80px;
+  margin-left: 30px;
+}
+header a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header a:hover {
+  opacity: 0.7;
+}
+header .nav-links li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  padding: 10px 10px;
+  margin: 5px;
+  background-color: #00303d;
+  color: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid #00303d;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.75rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn:hover {
+  background-color: #004052;
+  border: 2px solid #fff;
+  opacity: 1;
+  cursor: pointer;
+}
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+.ctrl-btn {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  padding: 5px;
+  margin: 0;
+}
+.ctrl-btn:hover {
+  color: #004052;
+  cursor: pointer;
+}
+.movie-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.movie {
+  background-color: #004052;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  width: 300px;
+}
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 1rem;
+}
+
+.movie img {
+  width: 100%;
+  display: block;
+}
+.movie .inner-card-controls {
+  display: inline;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 32, 41, 0.8);
+  border-radius: 5px;
+  padding: 3px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.movie:hover .inner-card-controls {
+  opacity: 1;
+}
+
+.btn-controls {
+  display: flex;
+  justify-content: center;
+  background-color: #004052;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .btn-controls {
+  transform: translateY(0%);
+}
+
+.page-heading {
+  text-transform: uppercase;
+  margin-left: 55px;
+}
+
+.no-movies {
+  color: #fff;
+  opacity: 1;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.empty-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.rating {
+  background-color: #002029;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+.rating.green {
+  color: green;
+}
+.rating.yellow {
+  color: yellow;
+}
+.rating.red {
+  color: red;
+}
+.search-bar {
+  background-color: #004052;
+  border: 2px solid #002029;
+  border-radius: 10px;
+  color: #fff;
+  width: 95%;
+  font-size: 1rem;
+  padding: 0.5rem .5rem;
+}
+.search-bar:focus {
+  outline: 0;
+}
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.search-results {
+  display: flex;
+  margin-bottom: 20px;
+}
+.search-results .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+.search-results img {
+  max-width: 200px;
+  border-radius: 5px;
+}
+.results {
+  list-style: none;
 }
