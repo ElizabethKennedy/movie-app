@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/movie-app/static/css/main.722a257c.css",
+    "main.js": "/movie-app/static/js/main.6d188dbc.js",
+    "static/media/fa-brands-400.svg": "/movie-app/static/media/fa-brands-400.63b566233f163d538cce.svg",
+    "static/media/fa-solid-900.eot": "/movie-app/static/media/fa-solid-900.9bbb245e67a133f6e486.eot",
+    "static/media/fa-solid-900.ttf": "/movie-app/static/media/fa-solid-900.32267f3b4db33a7c85ee.ttf",
+    "static/media/fa-brands-400.eot": "/movie-app/static/media/fa-brands-400.bfcc3384b8a317dc5de3.eot",
+    "static/media/fa-brands-400.ttf": "/movie-app/static/media/fa-brands-400.5818bbd07dfd7095920a.ttf",
+    "static/media/fa-solid-900.woff": "/movie-app/static/media/fa-solid-900.eeccf4f66002c6f2ba24.woff",
+    "static/media/fa-brands-400.woff": "/movie-app/static/media/fa-brands-400.ee26f57bc9e3619b022b.woff",
+    "static/media/fa-brands-400.woff2": "/movie-app/static/media/fa-brands-400.31015e861aeb30ff8355.woff2",
+    "static/media/fa-regular-400.ttf": "/movie-app/static/media/fa-regular-400.3cd9fb8fcec4ad0f99d4.ttf",
+    "static/media/fa-regular-400.eot": "/movie-app/static/media/fa-regular-400.77206a6bb316fa0aded5.eot",
+    "static/media/cinematrix-logo-reels-white.png": "/movie-app/static/media/cinematrix-logo-reels-white.b4893259037aa00b8560.png",
+    "static/media/fa-regular-400.woff": "/movie-app/static/media/fa-regular-400.8b892b7904a39e37c53d.woff",
+    "index.html": "/movie-app/index.html",
+    "main.722a257c.css.map": "/movie-app/static/css/main.722a257c.css.map",
+    "main.6d188dbc.js.map": "/movie-app/static/js/main.6d188dbc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.722a257c.css",
+    "static/js/main.6d188dbc.js"
+  ]
+}
